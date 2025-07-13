@@ -1,47 +1,99 @@
-/* Page background */
 body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #FFD800; /* bright yellow */
-  color: #000;
+  padding: 0;
 }
-
-/* Container for nav and main content */
-.container {
-  max-width: 900px;
-  margin: 20px auto;
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.layout {
+  display: flex;
+  min-height: 100vh;
 }
-
-/* Navigation menu */
-nav ul {
+.sidebar {
+  width: 290px;
+  background: #23243a;
+  color: #fff;
+  padding: 30px 20px 30px 20px;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+.sidebar h2 {
+  font-size: 1.3em;
+  margin-bottom: 24px;
+  letter-spacing: 0.04em;
+}
+.sidebar ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
+  width: 100%;
 }
-
-nav ul li {
+.sidebar ul li {
+  margin-bottom: 14px;
+}
+.sidebar ul li a,
+.sidebar .submenu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 8px 6px;
+  border-radius: 5px;
+  display: block;
+  transition: background 0.2s;
+}
+.sidebar ul li a.active,
+.sidebar ul li a:hover,
+.sidebar .submenu ul li a.active,
+.sidebar .submenu ul li a:hover {
+  background: #37385d;
   font-weight: bold;
 }
-
-nav ul li a {
-  color: #FFD800; /* yellow */
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+.sidebar .submenu {
+  margin-top: 18px;
 }
-
-nav ul li a:hover {
-  color: #fff; /* white on hover */
+.sidebar .submenu h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
 }
-
+.content {
+  flex: 1;
+  padding: 44px 40px;
+  background: #fff;
+  overflow-y: auto;
+  min-width: 0;
+}
 h1 {
-  text-align: center;
-  margin-bottom: 40px;
+  color: #222;
+  margin-bottom: 18px;
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.15em;
+  margin: 16px 0 10px 0;
+  color: #333;
+  font-weight: 700;
+}
+.question-block {
+  max-width: 700px;
+}
+p {
+  margin: 10px 0;
+  line-height: 1.7;
+  color: #444;
+}
+@media (max-width: 800px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    box-shadow: none;
+    padding: 18px;
+  }
+  .content {
+    padding: 20px 10px;
+  }
 }

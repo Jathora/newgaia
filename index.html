@@ -3,57 +3,266 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>New Gaia - Home</title>
+  <title>Questions of Existence</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div class="container">
-    <nav>
+  <div class="layout">
+    <nav class="sidebar">
+      <h2>Main Menu</h2>
       <ul>
-        <li><a href="#">Tell Me ▼</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Pictures</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Comments</a></li>
+        <li>
+          <a href="#" class="main-menu active" data-menu="taught">Have They Taught You?</a>
+        </li>
+        <li>
+          <a href="#" class="main-menu" data-menu="forgotten">Have You Forgotten?</a>
+        </li>
       </ul>
+      <div class="submenu" id="submenu-taught">
+        <h3>Chapters</h3>
+        <ul>
+          <li><a href="#" class="question-link active" data-content="taught-1">Chapter 1</a></li>
+          <li><a href="#" class="question-link" data-content="taught-2">Chapter 2</a></li>
+          <li><a href="#" class="question-link" data-content="taught-3">Chapter 3</a></li>
+          <li><a href="#" class="question-link" data-content="taught-4">Chapter 4</a></li>
+          <li><a href="#" class="question-link" data-content="taught-5">Chapter 5</a></li>
+        </ul>
+      </div>
+      <div class="submenu" id="submenu-forgotten" style="display:none;">
+        <h3>Chapters</h3>
+        <ul>
+          <li><a href="#" class="question-link active" data-content="forgotten-1">Chapter 1</a></li>
+        </ul>
+      </div>
     </nav>
-
-    <main>
-      <h1>Have They Taught Wrong?</h1>
-
-      <section class="question">
-        <p><strong>1)</strong> Have they taught you to forget everyone and everything in the world and focus only on striving, making profit, gaining status, creating your own story of life and pleasures, taking what you can from this world to uplift yourself, and that you should not worry about others’ fortunes whether they are dying, suffering, starving, or in danger?</p>
-        
-        <p><em>They taught me.</em></p>
-
-        <p>They taught me to strive while the world is burning.</p>
-
-        <p><em>They taught me.</em></p>
-
-        <p>They taught me to care less, to be cold, to show no feelings, and to strive for greatness. They even taught me to be better than everyone else, because a parent wishes their son and daughter to be better than everyone else.</p>
-
-        <p><em>They taught me.</em></p>
-
-        <p>Do you know</p>
-
-        <p>that I never believed I was better than anyone else?</p>
-
-        <p>Do you know</p>
-
-        <p>that I see myself in everyone and everything in this world?</p>
-
-        <p>Do you know that I value the trees, ground, animals, bugs, humans, cosmos, universe, black holes, and everything that exists?</p>
-
-        <p>Do you know that I even question whether non-existence also exists?</p>
-
-        <p>I see it</p>
-
-        <p>in my mind whenever I think about nothingness, trying to make sense of its existence. It becomes nothing but an imagined idea in my head, as if it is part of a puzzle in my mind.</p>
+    <main class="content">
+      <!-- Have They Taught You? Chapters -->
+      <section id="content-taught-1" class="question-content" style="display:block;">
+        <h1>Have They Taught You?</h1>
+        <h2>Chapter 1: Have They Taught You to Strive While Others Are Suffering?</h2>
+        <div class="question-block">
+          <p>Have they taught you<br>
+          to forget everyone and everything in the world—<br>
+          to focus only on striving,<br>
+          on making profit,<br>
+          on gaining status,<br>
+          on building your own story of life and pleasures,<br>
+          on taking what you can from this world to uplift yourself—</p>
+          <p>and that you shouldn’t worry about others’ fortunes,<br>
+          even if they are dying, suffering, starving, or in danger?</p>
+          <p><strong>They taught me.</strong><br>
+          They taught me<br>
+          to strive<br>
+          while the world is burning.</p>
+          <p><strong>They taught me.</strong><br>
+          They taught me<br>
+          to care less,<br>
+          to be cold,<br>
+          to show no feelings,<br>
+          and to strive for greatness.</p>
+          <p>They even taught me<br>
+          to be better than everyone else—<br>
+          because a parent wishes their child<br>
+          to be better than everyone else.</p>
+          <p>Do you know<br>
+          that I never believed I was better than anyone else?</p>
+          <p>Do you know<br>
+          that I see myself in everyone and everything in this world?</p>
+          <p>That I value the trees,<br>
+          the ground,<br>
+          the animals,<br>
+          the bugs,<br>
+          the humans,<br>
+          the cosmos,<br>
+          the universe,<br>
+          the black holes,<br>
+          and everything that exists?</p>
+          <p>That I even question<br>
+          whether non-existence also exists?</p>
+          <p>I see it<br>
+          in my mind<br>
+          when I think about nothingness—<br>
+          trying to make sense of it.</p>
+          <p>It becomes<br>
+          nothing but an imagined idea in my head,<br>
+          as if it’s part of a puzzle<br>
+          I’ll never finish.</p>
+        </div>
+      </section>
+      <section id="content-taught-2" class="question-content" style="display:none;">
+        <h1>Have They Taught You?</h1>
+        <h2>Chapter 2: Have They Taught You That Helping Others Is a Weakness?</h2>
+        <div class="question-block">
+          <p>Have they taught you<br>
+          that helping people in need is wrong,<br>
+          because it might affect your image,<br>
+          your time,<br>
+          your health,<br>
+          your emotions,<br>
+          or your future?</p>
+          <p>Have they taught you<br>
+          that those who struggle are beneath you?<br>
+          That their lives are just a sad footnote?<br>
+          That death will eventually take them anyway?</p>
+          <p>Then what makes you so different?</p>
+          <p>You’re not stronger than death.<br>
+          And surviving a little longer doesn’t mean you’ve escaped anything.</p>
+          <p>So why hoard the world’s pleasures<br>
+          when you could help someone survive a little longer—<br>
+          not just with food or money,<br>
+          but with dignity?</p>
+          <p>What does your time mean,<br>
+          if time itself is running out for everyone?</p>
+        </div>
+      </section>
+      <section id="content-taught-3" class="question-content" style="display:none;">
+        <h1>Have They Taught You?</h1>
+        <h2>Chapter 3: Have They Taught You to Look Down on the World?</h2>
+        <div class="question-block">
+          <p>Have they taught you<br>
+          to become so cold-hearted<br>
+          that you can’t even see those crying for help?</p>
+          <p>People pray for your kindness.<br>
+          They hope you'll see them.</p>
+          <p>But you laugh<br>
+          on rooftops,<br>
+          on boats,<br>
+          on balconies—<br>
+          high above the world.</p>
+          <p>You talk about the poor,<br>
+          while drinking,<br>
+          while smoking,<br>
+          as if they are distant stories.</p>
+          <p>Have you read any of the sacred books?<br>
+          The Qur’an.<br>
+          The Bible.<br>
+          The Torah.<br>
+          Or any spiritual text<br>
+          that warns against this illusion?</p>
+          <p>Have they not reminded you<br>
+          that this world isn’t all there is?</p>
+          <p>So what are you fighting for?<br>
+          Are you only trying to survive a little longer?</p>
+          <p>If you believe in nothing—<br>
+          how do you explain your own life?</p>
+          <p>Who came first: you, or existence?</p>
+          <p>You didn’t choose to be born.<br>
+          You didn’t design your breath,<br>
+          your bones,<br>
+          or your body.</p>
+          <p>You’re part of something bigger.<br>
+          You didn’t build yourself alone.</p>
+          <p>So why pretend otherwise?</p>
+        </div>
+      </section>
+      <section id="content-taught-4" class="question-content" style="display:none;">
+        <h1>Have They Taught You?</h1>
+        <h2>Chapter 4: Have They Taught You That Success Belongs to You Alone?</h2>
+        <div class="question-block">
+          <p>Why is your fortune more important than someone else's?</p>
+          <p>Did you succeed without food?<br>
+          Without oxygen?<br>
+          Without shelter?<br>
+          Without people working to plant, harvest, and deliver your meals?</p>
+          <p>Didn’t someone work<br>
+          so you could survive long enough<br>
+          to study,<br>
+          graduate,<br>
+          and "succeed"?</p>
+          <p>You didn’t become successful on your own—<br>
+          because no one does.<br>
+          Only nature is self-sustaining.<br>
+          Only existence supports itself.</p>
+          <p>Didn’t your cells, your bacteria, your DNA hold you together?<br>
+          Didn’t Earth give you a body to live in?</p>
+          <p>You share this world with those who have less.<br>
+          With those who struggle.<br>
+          With those who didn’t get your chances.</p>
+          <p>And still—this world teaches you<br>
+          to believe you earned everything<br>
+          by yourself.</p>
+        </div>
+      </section>
+      <section id="content-taught-5" class="question-content" style="display:none;">
+        <h1>Have They Taught You?</h1>
+        <h2>Chapter 5: Have They Taught You That This Is Just the Way It Is?</h2>
+        <div class="question-block">
+          <p>My friend, the world is crying.<br>
+          And you hear it.</p>
+          <p>You see protests.<br>
+          You see people begging for change.<br>
+          You’ve heard about Africa.<br>
+          The Middle East.<br>
+          Palestine.<br>
+          Sudan.<br>
+          Yemen.<br>
+          Ukraine.<br>
+          The United States.<br>
+          And everywhere in between.</p>
+          <p>You’ve heard that an ambulance ride costs money.<br>
+          That people go bankrupt trying to stay alive.</p>
+          <p>What happened to universal care?<br>
+          To free healing?<br>
+          To food as a right, not a privilege?</p>
+          <p>Why do we live in a world where money defines your value—<br>
+          instead of your work?</p>
+          <p>Why can’t people do what they love—<br>
+          and be supported for it?</p>
+          <p>What if you were a farmer,<br>
+          and your food was shared freely?</p>
+          <p>What if a chemist made sure it was safe?<br>
+          A biologist ensured your health?<br>
+          A teacher helped you understand the world?<br>
+          A builder gave you shelter?</p>
+          <p>Imagine a world where money didn’t dominate—<br>
+          but effort, care, and contribution did.</p>
+          <p>Or maybe this dream of mine is naïve.</p>
+          <p>Maybe this is just another system.<br>
+          Maybe it’s another illusion.</p>
+          <p>Sometimes I wonder…<br>
+          am I thinking like someone trying to play God?<br>
+          Trying to fix the world through words?</p>
+          <p>That’s not what I want.</p>
+          <p>Please don’t worship these words.<br>
+          Don’t follow me.<br>
+          Return to your books.<br>
+          To your conscience.<br>
+          To your God.</p>
+          <p>Ask for what’s right.<br>
+          Ask how to live.</p>
+          <p>Forgive me if I sound lost.<br>
+          This is just how I feel<br>
+          after watching so much suffering.<br>
+          After hearing the same cries<br>
+          and seeing no end to them.</p>
+          <p>It’s wearing me down.</p>
+          <p>I don’t always trust that change will come.<br>
+          Sometimes I just can’t hold the weight anymore.</p>
+          <p>I don’t feel joy<br>
+          when I know people are suffering.<br>
+          It echoes inside me.</p>
+          <p>Every day.</p>
+        </div>
+      </section>
+      <!-- Have You Forgotten? -->
+      <section id="content-forgotten-1" class="question-content" style="display:none;">
+        <h1>Have You Forgotten?</h1>
+        <h2>Chapter 1</h2>
+        <div class="question-block">
+          <p>Have you forgotten the body you were given, and the forces that sustain it?</p>
+          <p>Didn’t your DNA, bacteria, and cells work hard just to keep you alive?</p>
+          <p>Didn’t the cosmos move in such precision for you to have this moment, this breath?</p>
+          <p>Do you exist apart from existence itself?</p>
+          <p>Or are you sharing the same existential domain as every other person—rich or poor, healthy or sick, powerful or weak?</p>
+          <p>Have you forgotten the Earth is bigger than you?</p>
+          <p>And yet you act as if you are above it—indulging in luxuries, thinking they are yours to own.</p>
+          <p>You forget that success is not yours to hoard. It is a responsibility gifted by something greater.</p>
+          <p>The Earth gives you breath, food, water, sleep, shelter, company, even your ego.<br>
+          And all of it can be taken away.</p>
+        </div>
       </section>
     </main>
-
   </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
